@@ -7,7 +7,7 @@ parser=argparse.ArgumentParser()
 parser.add_argument('--name', help='name of the user for which ip updated')
 
 args=parser.parse_args()
-filename='./resources/terraform.tfvars.json'
+filename='terraform.tfvars.json'
 
 ip = get('https://ipapi.co/ip/').text
 

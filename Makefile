@@ -12,7 +12,6 @@ explain:
 plan:
 	git pull
 	py jsonupdate.py --name=${name}
-	cd resources
 	terraform apply -auto-approve
 	git add -A
 	git commit -m "ip updated"
