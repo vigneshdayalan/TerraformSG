@@ -20,7 +20,9 @@ And Managed Prefix list resource managed by terraform will be linked to all our 
 Pre Requisites:
 `users must have below`
 
-- Terraform `https://www.terraform.io/downloads.html`
+- Terraform 
+    - Path to download `https://www.terraform.io/downloads.html`
+    - refer to install `https://learn.hashicorp.com/tutorials/terraform/install-cli`
     -If `windows` - download and set the downloaded exe file path in environmental variable
     -If `mac`   - you can run the command `brew install terraform`
 - Python (install required modules `pip install requests`)
