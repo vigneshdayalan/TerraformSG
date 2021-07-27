@@ -16,6 +16,7 @@ plan:
 	py jsonupdate.py --name=${name}
 	@echo ***DEPLOYING TO AWS***
 	terraform apply -auto-approve
+	@echo ***DEPLOYMENT DONE***
 	@echo ***COMMITING CHANGES TO GITHUB***
 	git add -A
 	git commit -m "ip updated"
