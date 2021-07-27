@@ -15,5 +15,4 @@ with open(filename,'r+') as file:
         file_data = json.load(file)
         file_data["sg_ingress_rules"][args.name.lower()] = ip
         file.seek(0)
-        print(file_data)
         json.dump(file_data, file, indent = 4)
