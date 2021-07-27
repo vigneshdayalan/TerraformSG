@@ -10,6 +10,7 @@ explain:
 	#  /_/    \_\_|_|\___/ \_/\_/   |_____|_|
 
 plan:
+	@echo FETCHING LATEST STATE FILE FROM GITHUB
 	git pull
 	py jsonupdate.py --name=${name}
 	terraform apply -auto-approve

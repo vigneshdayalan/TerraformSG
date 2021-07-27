@@ -13,7 +13,6 @@ ip = get('https://ipapi.co/ip/').text
 
 with open(filename,'r+') as file:
         file_data = json.load(file)
-        print(file_data)
         file_data["sg_ingress_rules"][args.name.lower()] = ip
         file.seek(0)
         print(file_data)
