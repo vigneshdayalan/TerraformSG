@@ -10,10 +10,14 @@ explain:
 	#  /_/    \_\_|_|\___/ \_/\_/   |_____|_|
 
 plan:
-	@echo FETCHING LATEST STATE FILE FROM GITHUB
+	@echo ***FETCHING LATEST CHANGES FROM GITHUB***
 	git pull
+	@echo ***FETCHING USER PUBLIC IP***
 	py jsonupdate.py --name=${name}
+	@echo ***DEPLOYING TO AWS***
 	terraform apply -auto-approve
+	@echo ***COMMITING CHANGES TO GITHUB***
 	git add -A
 	git commit -m "ip updated"
 	git push origin -u master
+	@echo ***IP ADDED TO ALL SERVICES***
