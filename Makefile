@@ -13,7 +13,7 @@ update:
 	@echo ***FETCHING LATEST CHANGES FROM GITHUB***
 	git pull
 	@echo ***FETCHING USER PUBLIC IP***
-	py jsonupdate.py --name=${name}
+	py jsonupdate.py --user=${user}
 	@echo ***DEPLOYING TO AWS***
 	terraform apply -auto-approve
 	@echo ***DEPLOYMENT DONE***
