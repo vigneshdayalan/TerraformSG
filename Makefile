@@ -9,7 +9,7 @@ explain:
 	#   / ____ \| | | (_) \ V  V /   _| |_| |
 	#  /_/    \_\_|_|\___/ \_/\_/   |_____|_|
 
-update:
+plan:
 	@echo ***FETCHING LATEST CHANGES FROM GITHUB***
 	git pull
 	@echo ***FETCHING USER PUBLIC IP***
